@@ -2,6 +2,9 @@ package com.xht.lease.service;
 
 import com.xht.lease.entity.AttrKey;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xht.lease.vo.attr.AttrKeyVo;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -10,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface AttrKeyService extends IService<AttrKey> {
 
+    List<AttrKeyVo> listAttrInfo();
 }

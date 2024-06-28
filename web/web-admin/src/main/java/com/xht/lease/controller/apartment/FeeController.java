@@ -4,9 +4,12 @@ package com.xht.lease.controller.apartment;
 import com.xht.lease.result.Result;
 import com.xht.lease.entity.FeeKey;
 import com.xht.lease.entity.FeeValue;
+import com.xht.lease.service.FeeKeyService;
+import com.xht.lease.service.FeeValueService;
 import com.xht.lease.vo.fee.FeeKeyVo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,6 +19,12 @@ import java.util.List;
 @RestController
 @RequestMapping("/admin/fee")
 public class FeeController {
+
+    @Autowired
+    private FeeKeyService feeKeyService;
+
+    @Autowired
+    private FeeValueService feeValueService;
 
     @Operation(summary = "保存或更新杂费名称")
     @PostMapping("key/saveOrUpdate")

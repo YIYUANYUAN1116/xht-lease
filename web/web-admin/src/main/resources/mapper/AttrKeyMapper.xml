@@ -3,5 +3,23 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xht.lease.mapper.AttrKeyMapper">
-
+    <resultMap id="resultMap" type="com.xht.lease.vo.attr.AttrKeyVo">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <collection property="attrValueList" ofType="com.xht.lease.entity.AttrValue">
+            <id property="id" column="value_id" />
+            <result column="value_name" property="name"/>
+            <result column="key_id" property="attrKeyId"/>
+        </collection>
+    </resultMap>
+    <select id="listAttrInfo" resultMap="resultMap">
+        select k.id,
+               k.name ,
+               v.id   value_id,
+               v.name value_name,
+               v.attr_key_id key_id
+        from attr_key k
+        left join attr_value v on v.attr_key_id = k.id and v.is_deleted=0
+        where k.is_deleted = 0
+    </select>
 </mapper>
