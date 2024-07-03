@@ -2,6 +2,9 @@ package com.xht.lease.mapper;
 
 import com.xht.lease.entity.ApartmentLabel;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.xht.lease.entity.LabelInfo;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -11,6 +14,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 */
 public interface ApartmentLabelMapper extends BaseMapper<ApartmentLabel> {
 
+    List<LabelInfo> selectListByApartmentId(Long id);
 }
 
 

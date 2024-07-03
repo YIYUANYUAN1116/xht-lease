@@ -2,6 +2,9 @@ package com.xht.lease.service;
 
 import com.xht.lease.entity.ApartmentLabel;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xht.lease.entity.LabelInfo;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -10,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface ApartmentLabelService extends IService<ApartmentLabel> {
 
+    List<LabelInfo> selectListByApartmentId(Long id);
 }

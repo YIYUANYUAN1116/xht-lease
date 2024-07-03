@@ -2,6 +2,9 @@ package com.xht.lease.mapper;
 
 import com.xht.lease.entity.FeeKey;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.xht.lease.vo.fee.FeeKeyVo;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -11,6 +14,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 */
 public interface FeeKeyMapper extends BaseMapper<FeeKey> {
 
+    List<FeeKeyVo> listFeeInfo();
 }
 
 

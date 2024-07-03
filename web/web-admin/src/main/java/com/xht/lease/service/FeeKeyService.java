@@ -2,6 +2,9 @@ package com.xht.lease.service;
 
 import com.xht.lease.entity.FeeKey;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xht.lease.vo.fee.FeeKeyVo;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -10,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface FeeKeyService extends IService<FeeKey> {
 
+    List<FeeKeyVo> listFeeInfo();
 }

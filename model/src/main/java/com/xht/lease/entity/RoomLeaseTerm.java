@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @TableName(value = "room_lease_term")
 @Data
 @Schema(description = "房间租期关系表")
-@Builder
+
 @AllArgsConstructor
 @NoArgsConstructor
 public class RoomLeaseTerm extends BaseEntity {

@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Schema(description = "图片信息")
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+
 public class GraphVo {
 
 

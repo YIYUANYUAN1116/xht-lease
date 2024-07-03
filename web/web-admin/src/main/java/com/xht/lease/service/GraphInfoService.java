@@ -2,6 +2,10 @@ package com.xht.lease.service;
 
 import com.xht.lease.entity.GraphInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xht.lease.enums.ItemType;
+import com.xht.lease.vo.graph.GraphVo;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -10,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface GraphInfoService extends IService<GraphInfo> {
 
+    List<GraphVo> selectListByItemTypeAndId(ItemType itemType, Long id);
 }

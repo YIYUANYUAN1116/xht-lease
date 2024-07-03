@@ -39,7 +39,7 @@ public enum ResultCodeEnum {
 
 
     TOKEN_EXPIRED(601, "token过期"),
-    TOKEN_INVALID(602, "token非法");
+    TOKEN_INVALID(602, "token非法"), ADMIN_APARTMENT_DELETE_ERROR(701, "该公寓下还有房间信息未删除，请先删除房间信息");
 
 
     private final Integer code;

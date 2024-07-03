@@ -1,7 +1,6 @@
 package com.xht.lease.custom;
 
 import com.xht.lease.enums.BaseEnum;
-
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.core.convert.converter.ConverterFactory;
 import org.springframework.stereotype.Component;

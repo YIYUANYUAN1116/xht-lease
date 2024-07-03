@@ -2,9 +2,12 @@ package com.xht.lease.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xht.lease.entity.ApartmentLabel;
+import com.xht.lease.entity.LabelInfo;
 import com.xht.lease.service.ApartmentLabelService;
 import com.xht.lease.mapper.ApartmentLabelMapper;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -15,6 +18,10 @@ import org.springframework.stereotype.Service;
 public class ApartmentLabelServiceImpl extends ServiceImpl<ApartmentLabelMapper, ApartmentLabel>
     implements ApartmentLabelService{
 
+    @Override
+    public List<LabelInfo> selectListByApartmentId(Long id) {
+        return this.baseMapper.selectListByApartmentId(id);
+    }
 }
 
 

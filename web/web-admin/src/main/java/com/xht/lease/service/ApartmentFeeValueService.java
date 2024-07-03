@@ -2,6 +2,9 @@ package com.xht.lease.service;
 
 import com.xht.lease.entity.ApartmentFeeValue;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xht.lease.vo.fee.FeeValueVo;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -10,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface ApartmentFeeValueService extends IService<ApartmentFeeValue> {
 
+    List<FeeValueVo> selectListByApartmentId(Long id);
 }

@@ -4,7 +4,10 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xht.lease.entity.ApartmentFeeValue;
 import com.xht.lease.service.ApartmentFeeValueService;
 import com.xht.lease.mapper.ApartmentFeeValueMapper;
+import com.xht.lease.vo.fee.FeeValueVo;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -15,6 +18,10 @@ import org.springframework.stereotype.Service;
 public class ApartmentFeeValueServiceImpl extends ServiceImpl<ApartmentFeeValueMapper, ApartmentFeeValue>
     implements ApartmentFeeValueService{
 
+    @Override
+    public List<FeeValueVo> selectListByApartmentId(Long id) {
+        return this.baseMapper.selectListByApartmentId(id);
+    }
 }
 
 

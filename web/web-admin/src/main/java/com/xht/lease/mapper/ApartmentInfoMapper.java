@@ -1,7 +1,10 @@
 package com.xht.lease.mapper;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.xht.lease.entity.ApartmentInfo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.xht.lease.vo.apartment.ApartmentItemVo;
+import com.xht.lease.vo.apartment.ApartmentQueryVo;
 
 /**
 * @author liubo
@@ -11,6 +14,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 */
 public interface ApartmentInfoMapper extends BaseMapper<ApartmentInfo> {
 
+    IPage<ApartmentItemVo> pageApartmentItemByQuery(IPage<ApartmentItemVo> page, ApartmentQueryVo queryVo);
 }
 
 

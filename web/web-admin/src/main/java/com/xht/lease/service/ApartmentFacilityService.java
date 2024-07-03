@@ -2,6 +2,9 @@ package com.xht.lease.service;
 
 import com.xht.lease.entity.ApartmentFacility;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xht.lease.entity.FacilityInfo;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -10,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface ApartmentFacilityService extends IService<ApartmentFacility> {
 
+    List<FacilityInfo> selectListByApartmentId(Long id);
 }
