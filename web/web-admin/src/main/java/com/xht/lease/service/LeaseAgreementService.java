@@ -1,7 +1,10 @@
 package com.xht.lease.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.xht.lease.entity.LeaseAgreement;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xht.lease.vo.agreement.AgreementQueryVo;
+import com.xht.lease.vo.agreement.AgreementVo;
 
 /**
 * @author liubo
@@ -10,4 +13,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface LeaseAgreementService extends IService<LeaseAgreement> {
 
+    IPage<AgreementVo> pageAgreementByQuery(IPage<AgreementVo> page, AgreementQueryVo queryVo);
+
+    AgreementVo getAgreementById(Long id);
 }

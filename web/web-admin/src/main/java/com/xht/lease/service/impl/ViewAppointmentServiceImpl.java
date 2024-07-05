@@ -1,9 +1,12 @@
 package com.xht.lease.service.impl;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.xht.lease.entity.ViewAppointment;
 import com.xht.lease.mapper.ViewAppointmentMapper;
 import com.xht.lease.service.ViewAppointmentService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.xht.lease.vo.appointment.AppointmentQueryVo;
+import com.xht.lease.vo.appointment.AppointmentVo;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +18,10 @@ import org.springframework.stereotype.Service;
 public class ViewAppointmentServiceImpl extends ServiceImpl<ViewAppointmentMapper, ViewAppointment>
         implements ViewAppointmentService {
 
+    @Override
+    public IPage<AppointmentVo> pageAppointmentByQuery(IPage<AppointmentVo> page, AppointmentQueryVo queryVo) {
+        return baseMapper.pageAppointmentByQuery(page,queryVo);
+    }
 }
 
 

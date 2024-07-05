@@ -1,7 +1,10 @@
 package com.xht.lease.mapper;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.xht.lease.entity.SystemUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.xht.lease.vo.system.user.SystemUserItemVo;
+import com.xht.lease.vo.system.user.SystemUserQueryVo;
 
 /**
 * @author liubo
@@ -11,6 +14,9 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 */
 public interface SystemUserMapper extends BaseMapper<SystemUser> {
 
+    IPage<SystemUserItemVo> pageSystemUserByQuery(IPage<SystemUser> page, SystemUserQueryVo queryVo);
+
+    SystemUser selectOneByUsername(String username);
 }
 
 

@@ -1,7 +1,10 @@
 package com.xht.lease.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.xht.lease.entity.SystemUser;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xht.lease.vo.system.user.SystemUserItemVo;
+import com.xht.lease.vo.system.user.SystemUserQueryVo;
 
 /**
 * @author liubo
@@ -10,4 +13,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface SystemUserService extends IService<SystemUser> {
 
+    IPage<SystemUserItemVo> pageSystemUserByQuery(IPage<SystemUser> page, SystemUserQueryVo queryVo);
+
+    SystemUserItemVo getSystemUserById(Long id);
 }

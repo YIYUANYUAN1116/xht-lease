@@ -9,6 +9,14 @@ spring:
     url: jdbc:mysql://localhost:3306/lease?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: yzd2021
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  data:
+    redis:
+      host: localhost
+      port: 3156
+      database: 0
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
@@ -28,3 +36,4 @@ minio:
 
 springdoc:
   default-flat-param-object: true
+
