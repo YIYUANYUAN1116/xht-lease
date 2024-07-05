@@ -2,8 +2,8 @@ package com.xht.lease.app.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xht.lease.model.entity.GraphInfo;
-import com.xht.lease.web.app.service.GraphInfoService;
-import com.xht.lease.web.app.mapper.GraphInfoMapper;
+import com.xht.lease.app.service.GraphInfoService;
+import com.xht.lease.app.mapper.GraphInfoMapper;
 import org.springframework.stereotype.Service;
 
 /**

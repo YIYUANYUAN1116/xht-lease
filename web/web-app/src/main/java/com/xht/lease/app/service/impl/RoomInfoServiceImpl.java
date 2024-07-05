@@ -1,8 +1,8 @@
 package com.xht.lease.app.service.impl;
 
 import com.xht.lease.model.entity.RoomInfo;
-import com.xht.lease.web.app.mapper.RoomInfoMapper;
-import com.xht.lease.web.app.service.RoomInfoService;
+import com.xht.lease.app.mapper.RoomInfoMapper;
+import com.xht.lease.app.service.RoomInfoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

@@ -1,9 +1,7 @@
 package com.xht.lease.web.vo.room;
 
-import com.xht.lease.common.entity.*;
 import com.xht.lease.model.entity.*;
 import com.xht.lease.web.vo.graph.GraphVo;
-import com.xht.lease.entity.*;
 import com.xht.lease.web.vo.attr.AttrValueVo;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

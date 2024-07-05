@@ -1,7 +1,7 @@
 package com.xht.lease.app.mapper;
 
 import com.xht.lease.model.entity.ViewAppointment;
-import com.xht.lease.web.app.vo.appointment.AppointmentItemVo;
+import com.xht.lease.app.vo.appointment.AppointmentItemVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

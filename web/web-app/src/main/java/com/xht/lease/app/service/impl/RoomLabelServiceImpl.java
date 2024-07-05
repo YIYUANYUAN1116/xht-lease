@@ -2,8 +2,8 @@ package com.xht.lease.app.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xht.lease.model.entity.RoomLabel;
-import com.xht.lease.web.app.service.RoomLabelService;
-import com.xht.lease.web.app.mapper.RoomLabelMapper;
+import com.xht.lease.app.service.RoomLabelService;
+import com.xht.lease.app.mapper.RoomLabelMapper;
 import org.springframework.stereotype.Service;
 
 /**

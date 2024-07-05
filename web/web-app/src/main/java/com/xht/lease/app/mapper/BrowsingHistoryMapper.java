@@ -1,7 +1,7 @@
 package com.xht.lease.app.mapper;
 
 import com.xht.lease.model.entity.BrowsingHistory;
-import com.xht.lease.web.app.vo.history.HistoryItemVo;
+import com.xht.lease.app.vo.history.HistoryItemVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

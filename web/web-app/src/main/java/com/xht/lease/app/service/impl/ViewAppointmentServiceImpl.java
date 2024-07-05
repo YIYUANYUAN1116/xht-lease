@@ -1,8 +1,8 @@
 package com.xht.lease.app.service.impl;
 
 import com.xht.lease.model.entity.ViewAppointment;
-import com.xht.lease.web.app.mapper.ViewAppointmentMapper;
-import com.xht.lease.web.app.service.ViewAppointmentService;
+import com.xht.lease.app.mapper.ViewAppointmentMapper;
+import com.xht.lease.app.service.ViewAppointmentService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,8 +2,8 @@ package com.xht.lease.app.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xht.lease.model.entity.DistrictInfo;
-import com.xht.lease.web.app.service.DistrictInfoService;
-import com.xht.lease.web.app.mapper.DistrictInfoMapper;
+import com.xht.lease.app.service.DistrictInfoService;
+import com.xht.lease.app.mapper.DistrictInfoMapper;
 import org.springframework.stereotype.Service;
 
 /**

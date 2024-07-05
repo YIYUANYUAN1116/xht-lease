@@ -1,7 +1,7 @@
 package com.xht.lease.app.mapper;
 
 import com.xht.lease.model.entity.FeeValue;
-import com.xht.lease.web.app.vo.fee.FeeValueVo;
+import com.xht.lease.app.vo.fee.FeeValueVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

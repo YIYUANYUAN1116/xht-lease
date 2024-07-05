@@ -2,7 +2,7 @@ package com.xht.lease.app.vo.agreement;
 
 import com.xht.lease.model.enums.LeaseSourceType;
 import com.xht.lease.model.enums.LeaseStatus;
-import com.xht.lease.web.app.vo.graph.GraphVo;
+import com.xht.lease.app.vo.graph.GraphVo;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

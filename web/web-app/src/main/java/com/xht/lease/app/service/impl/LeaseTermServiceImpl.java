@@ -1,8 +1,8 @@
 package com.xht.lease.app.service.impl;
 
 import com.xht.lease.model.entity.LeaseTerm;
-import com.xht.lease.web.app.mapper.LeaseTermMapper;
-import com.xht.lease.web.app.service.LeaseTermService;
+import com.xht.lease.app.mapper.LeaseTermMapper;
+import com.xht.lease.app.service.LeaseTermService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

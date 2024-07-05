@@ -2,7 +2,7 @@ package com.xht.lease.app.mapper;
 
 import com.xht.lease.model.entity.GraphInfo;
 import com.xht.lease.model.enums.ItemType;
-import com.xht.lease.web.app.vo.graph.GraphVo;
+import com.xht.lease.app.vo.graph.GraphVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

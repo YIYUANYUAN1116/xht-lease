@@ -1,7 +1,7 @@
 package com.xht.lease.app.mapper;
 
 import com.xht.lease.model.entity.ApartmentInfo;
-import com.xht.lease.web.app.vo.apartment.ApartmentItemVo;
+import com.xht.lease.app.vo.apartment.ApartmentItemVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

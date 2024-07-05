@@ -1,8 +1,8 @@
 package com.xht.lease.app.service.impl;
 
 import com.xht.lease.model.entity.PaymentType;
-import com.xht.lease.web.app.mapper.PaymentTypeMapper;
-import com.xht.lease.web.app.service.PaymentTypeService;
+import com.xht.lease.app.mapper.PaymentTypeMapper;
+import com.xht.lease.app.service.PaymentTypeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

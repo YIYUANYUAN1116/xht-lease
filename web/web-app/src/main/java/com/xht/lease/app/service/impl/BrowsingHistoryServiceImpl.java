@@ -1,8 +1,8 @@
 package com.xht.lease.app.service.impl;
 
 import com.xht.lease.model.entity.BrowsingHistory;
-import com.xht.lease.web.app.mapper.BrowsingHistoryMapper;
-import com.xht.lease.web.app.service.BrowsingHistoryService;
+import com.xht.lease.app.mapper.BrowsingHistoryMapper;
+import com.xht.lease.app.service.BrowsingHistoryService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

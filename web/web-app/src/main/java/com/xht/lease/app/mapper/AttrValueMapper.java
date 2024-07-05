@@ -1,7 +1,7 @@
 package com.xht.lease.app.mapper;
 
 import com.xht.lease.model.entity.AttrValue;
-import com.xht.lease.web.app.vo.attr.AttrValueVo;
+import com.xht.lease.app.vo.attr.AttrValueVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

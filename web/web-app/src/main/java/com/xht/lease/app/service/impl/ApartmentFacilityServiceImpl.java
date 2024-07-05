@@ -2,8 +2,8 @@ package com.xht.lease.app.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xht.lease.model.entity.ApartmentFacility;
-import com.xht.lease.web.app.service.ApartmentFacilityService;
-import com.xht.lease.web.app.mapper.ApartmentFacilityMapper;
+import com.xht.lease.app.service.ApartmentFacilityService;
+import com.xht.lease.app.mapper.ApartmentFacilityMapper;
 import org.springframework.stereotype.Service;
 
 /**

@@ -1,7 +1,5 @@
 package com.xht.lease.web.vo.agreement;
 
-import com.xht.lease.common.entity.*;
-import com.xht.lease.entity.*;
 import com.xht.lease.model.entity.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

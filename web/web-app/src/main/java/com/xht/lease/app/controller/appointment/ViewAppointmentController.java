@@ -3,8 +3,8 @@ package com.xht.lease.app.controller.appointment;
 
 import com.xht.lease.common.result.Result;
 import com.xht.lease.model.entity.ViewAppointment;
-import com.xht.lease.web.app.vo.appointment.AppointmentDetailVo;
-import com.xht.lease.web.app.vo.appointment.AppointmentItemVo;
+import com.xht.lease.app.vo.appointment.AppointmentDetailVo;
+import com.xht.lease.app.vo.appointment.AppointmentItemVo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;

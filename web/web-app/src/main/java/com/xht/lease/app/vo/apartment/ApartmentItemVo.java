@@ -3,7 +3,7 @@ package com.xht.lease.app.vo.apartment;
 
 import com.xht.lease.model.entity.ApartmentInfo;
 import com.xht.lease.model.entity.LabelInfo;
-import com.xht.lease.web.app.vo.graph.GraphVo;
+import com.xht.lease.app.vo.graph.GraphVo;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 

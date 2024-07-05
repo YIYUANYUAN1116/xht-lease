@@ -1,10 +1,10 @@
 package com.xht.lease.app.controller.agreement;
 
+import com.xht.lease.app.vo.agreement.AgreementDetailVo;
+import com.xht.lease.app.vo.agreement.AgreementItemVo;
 import com.xht.lease.common.result.Result;
 import com.xht.lease.model.entity.LeaseAgreement;
 import com.xht.lease.model.enums.LeaseStatus;
-import com.xht.lease.web.app.vo.agreement.AgreementDetailVo;
-import com.xht.lease.web.app.vo.agreement.AgreementItemVo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;

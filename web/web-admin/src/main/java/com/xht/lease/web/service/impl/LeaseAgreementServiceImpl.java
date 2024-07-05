@@ -1,11 +1,8 @@
 package com.xht.lease.web.service.impl;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.xht.lease.common.entity.*;
 import com.xht.lease.model.entity.*;
 import com.xht.lease.web.mapper.*;
-import com.xht.lease.entity.*;
-import com.xht.lease.mapper.*;
 import com.xht.lease.web.service.LeaseAgreementService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xht.lease.web.vo.agreement.AgreementQueryVo;

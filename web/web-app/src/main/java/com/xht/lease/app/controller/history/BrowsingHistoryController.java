@@ -2,7 +2,7 @@ package com.xht.lease.app.controller.history;
 
 
 import com.xht.lease.common.result.Result;
-import com.xht.lease.web.app.vo.history.HistoryItemVo;
+import com.xht.lease.app.vo.history.HistoryItemVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

@@ -1,8 +1,8 @@
 package com.xht.lease.app.mapper;
 
 import com.xht.lease.model.entity.RoomInfo;
-import com.xht.lease.web.app.vo.room.RoomItemVo;
-import com.xht.lease.web.app.vo.room.RoomQueryVo;
+import com.xht.lease.app.vo.room.RoomItemVo;
+import com.xht.lease.app.vo.room.RoomQueryVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

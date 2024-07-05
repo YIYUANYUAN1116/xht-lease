@@ -1,8 +1,7 @@
 package com.xht.lease.app.controller.apartment;
 
 import com.xht.lease.common.result.Result;
-import com.xht.lease.web.app.service.ApartmentInfoService;
-import com.xht.lease.web.app.vo.apartment.ApartmentDetailVo;
+import com.xht.lease.app.vo.apartment.ApartmentDetailVo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.GetMapping;

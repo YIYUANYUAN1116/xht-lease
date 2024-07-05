@@ -2,9 +2,9 @@ package com.xht.lease.app.controller.room;
 
 
 import com.xht.lease.common.result.Result;
-import com.xht.lease.web.app.vo.room.RoomDetailVo;
-import com.xht.lease.web.app.vo.room.RoomItemVo;
-import com.xht.lease.web.app.vo.room.RoomQueryVo;
+import com.xht.lease.app.vo.room.RoomDetailVo;
+import com.xht.lease.app.vo.room.RoomItemVo;
+import com.xht.lease.app.vo.room.RoomQueryVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

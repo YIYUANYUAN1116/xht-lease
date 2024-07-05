@@ -1,7 +1,7 @@
 package com.xht.lease.app.vo.appointment;
 
 import com.xht.lease.model.enums.AppointmentStatus;
-import com.xht.lease.web.app.vo.graph.GraphVo;
+import com.xht.lease.app.vo.graph.GraphVo;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

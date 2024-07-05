@@ -2,8 +2,8 @@ package com.xht.lease.app.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xht.lease.model.entity.AttrKey;
-import com.xht.lease.web.app.service.AttrKeyService;
-import com.xht.lease.web.app.mapper.AttrKeyMapper;
+import com.xht.lease.app.service.AttrKeyService;
+import com.xht.lease.app.mapper.AttrKeyMapper;
 import org.springframework.stereotype.Service;
 
 /**

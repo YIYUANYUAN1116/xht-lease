@@ -1,6 +1,6 @@
 package com.xht.lease.app.service.impl;
 
-import com.xht.lease.web.app.service.LoginService;
+import com.xht.lease.app.service.LoginService;
 import org.springframework.stereotype.Service;
 
 @Service

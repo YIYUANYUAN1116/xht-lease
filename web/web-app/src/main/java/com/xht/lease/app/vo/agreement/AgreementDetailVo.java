@@ -1,7 +1,7 @@
 package com.xht.lease.app.vo.agreement;
 
 import com.xht.lease.model.entity.LeaseAgreement;
-import com.xht.lease.web.app.vo.graph.GraphVo;
+import com.xht.lease.app.vo.graph.GraphVo;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 

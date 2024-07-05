@@ -1,10 +1,10 @@
 package com.xht.lease.app.vo.room;
 
 import com.xht.lease.model.entity.*;
-import com.xht.lease.web.app.vo.apartment.ApartmentItemVo;
-import com.xht.lease.web.app.vo.attr.AttrValueVo;
-import com.xht.lease.web.app.vo.fee.FeeValueVo;
-import com.xht.lease.web.app.vo.graph.GraphVo;
+import com.xht.lease.app.vo.apartment.ApartmentItemVo;
+import com.xht.lease.app.vo.attr.AttrValueVo;
+import com.xht.lease.app.vo.fee.FeeValueVo;
+import com.xht.lease.app.vo.graph.GraphVo;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
