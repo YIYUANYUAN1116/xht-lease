@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.xht.lease.mapper.ApartmentFeeValueMapper">
+<mapper namespace="mapper.com.xht.lease.common.ApartmentFeeValueMapper">
 
-    <select id="selectListByApartmentId" resultType="com.xht.lease.vo.fee.FeeValueVo">
+    <select id="selectListByApartmentId" resultType="fee.vo.com.xht.lease.common.FeeValueVo">
         SELECT fv.id,
                fv.name,
                fv.unit,

@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: xht-lease
+    name: xht-lease-web
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/lease?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true

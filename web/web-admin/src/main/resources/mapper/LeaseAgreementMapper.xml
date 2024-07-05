@@ -2,22 +2,22 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.xht.lease.mapper.LeaseAgreementMapper">
+<mapper namespace="mapper.com.xht.lease.common.LeaseAgreementMapper">
 
-    <resultMap id="agreementVoMap" type="com.xht.lease.vo.agreement.AgreementVo" autoMapping="true">
+    <resultMap id="agreementVoMap" type="com.xht.lease.web.vo.agreement.AgreementVo" autoMapping="true">
         <id property="id" column="id"/>
-        <association property="apartmentInfo" javaType="com.xht.lease.entity.ApartmentInfo" autoMapping="true">
+        <association property="apartmentInfo" javaType="com.xht.lease.model.entity.ApartmentInfo" autoMapping="true">
             <id property="id" column="apartment_id"/>
             <result property="name" column="apartment_name"/>
         </association>
-        <association property="roomInfo" javaType="com.xht.lease.entity.RoomInfo" autoMapping="true">
+        <association property="roomInfo" javaType="com.xht.lease.model.entity.RoomInfo" autoMapping="true">
             <id property="id" column="room_id"/>
         </association>
-        <association property="paymentType" javaType="com.xht.lease.entity.PaymentType" autoMapping="true">
+        <association property="paymentType" javaType="com.xht.lease.model.entity.PaymentType" autoMapping="true">
             <id property="id" column="payment_type_id"/>
             <result property="name" column="payment_type_name"/>
         </association>
-        <association property="leaseTerm" javaType="com.xht.lease.entity.LeaseTerm" autoMapping="true">
+        <association property="leaseTerm" javaType="com.xht.lease.model.entity.LeaseTerm" autoMapping="true">
             <id property="id" column="lease_term_id"/>
         </association>
     </resultMap>

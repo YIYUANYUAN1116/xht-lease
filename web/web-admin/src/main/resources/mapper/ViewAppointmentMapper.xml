@@ -2,11 +2,11 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.xht.lease.mapper.ViewAppointmentMapper">
+<mapper namespace="mapper.com.xht.lease.common.ViewAppointmentMapper">
 
-    <resultMap id="AppointmentVoMap" type="com.xht.lease.vo.appointment.AppointmentVo" autoMapping="true">
+    <resultMap id="AppointmentVoMap" type="com.xht.lease.web.vo.appointment.AppointmentVo" autoMapping="true">
         <id property="id" column="id"/>
-        <association property="apartmentInfo" javaType="com.xht.lease.entity.ApartmentInfo" autoMapping="true">
+        <association property="apartmentInfo" javaType="com.xht.lease.model.entity.ApartmentInfo" autoMapping="true">
             <id property="id" column="apartment_id"/>
             <result property="name" column="apartment_name"/>
         </association>

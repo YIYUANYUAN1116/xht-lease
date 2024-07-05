@@ -2,12 +2,12 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.xht.lease.mapper.FeeKeyMapper">
+<mapper namespace="mapper.com.xht.lease.common.FeeKeyMapper">
 
-    <resultMap id="FeeInfoList" type="com.xht.lease.vo.fee.FeeKeyVo">
+    <resultMap id="FeeInfoList" type="fee.vo.com.xht.lease.common.FeeKeyVo">
         <id property="id" column="id"/>
         <result property="name" column="name"/>
-        <collection property="feeValueList" ofType="com.xht.lease.entity.FeeValue">
+        <collection property="feeValueList" ofType="com.xht.lease.model.entity.FeeValue">
             <id property="id" column="value_id"/>
             <result property="name" column="value_name"/>
             <result property="unit" column="value_unit"/>
