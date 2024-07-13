@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mapper.com.xht.lease.common.ApartmentInfoMapper">
+<mapper namespace="com.xht.lease.web.mapper.ApartmentInfoMapper">
 
-    <select id="pageApartmentItemByQuery" resultType="apartment.vo.com.xht.lease.common.ApartmentItemVo">
+    <select id="pageApartmentItemByQuery" resultType="com.xht.lease.web.vo.apartment.ApartmentItemVo">
         select
             ai.id,
             ai.name,
@@ -19,7 +19,7 @@
             ai.latitude,
             ai.longitude,
             ai.phone,
-            ai.is_release,
+            ai.is_release
         from (select id,
                 name,
                 introduction,

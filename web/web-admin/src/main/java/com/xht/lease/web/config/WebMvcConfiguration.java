@@ -1,8 +1,8 @@
-package com.xht.lease.common.config;
+package com.xht.lease.web.config;
 
 
 import com.xht.lease.common.custom.StringToBaseEnumConverterFactory;
-import com.xht.lease.common.interceptor.AuthenticationInterceptor;
+import com.xht.lease.web.interceptor.AuthenticationInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;

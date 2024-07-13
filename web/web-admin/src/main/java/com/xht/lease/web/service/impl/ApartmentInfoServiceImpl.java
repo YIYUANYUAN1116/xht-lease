@@ -7,6 +7,7 @@ import com.xht.lease.model.enums.ItemType;
 import com.xht.lease.common.exception.LeaseException;
 import com.xht.lease.web.mapper.ApartmentInfoMapper;
 import com.xht.lease.common.result.ResultCodeEnum;
+import com.xht.lease.web.mapper.RoomInfoMapper;
 import com.xht.lease.web.service.*;
 import com.xht.lease.web.vo.apartment.ApartmentDetailVo;
 import com.xht.lease.web.vo.apartment.ApartmentItemVo;
@@ -24,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author liubo
+ * @author yzd
  * @description 针对表【apartment_info(公寓信息表)】的数据库操作Service实现
  * @createDate 2023-07-24 15:48:00
  */
@@ -44,7 +45,7 @@ public class ApartmentInfoServiceImpl extends ServiceImpl<ApartmentInfoMapper, A
     private ApartmentFeeValueService apartmentFeeValueService;
 
     @Autowired
-    private RoomInfoService roomInfoService;
+    private RoomInfoMapper roomInfoMapper;
 
     @Override
     public void saveOrUpdateApartment(ApartmentSubmitVo apartmentSubmitVo) {
@@ -173,7 +174,7 @@ public class ApartmentInfoServiceImpl extends ServiceImpl<ApartmentInfoMapper, A
     public void removeApartmentById(Long id) {
         LambdaQueryWrapper<RoomInfo> roomQueryWrapper = new LambdaQueryWrapper<>();
         roomQueryWrapper.eq(RoomInfo::getApartmentId, id);
-        long count = roomInfoService.count(roomQueryWrapper);
+        long count = roomInfoMapper.selectCount(roomQueryWrapper);
         if (count > 0) {
             throw new LeaseException(ResultCodeEnum.ADMIN_APARTMENT_DELETE_ERROR);
         }

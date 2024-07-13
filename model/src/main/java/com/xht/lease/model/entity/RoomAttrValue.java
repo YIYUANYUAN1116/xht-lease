@@ -3,12 +3,14 @@ package com.xht.lease.model.entity;
 import io.swagger.v3.oas.annotations.media.Schema;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 @Schema(description = "房间&基本属性值关联表")
 @TableName(value = "room_attr_value")
 @Data
-
+@Builder
 public class RoomAttrValue extends BaseEntity {
 
     private static final long serialVersionUID = 1L;

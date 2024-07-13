@@ -4,6 +4,7 @@ package com.xht.lease.app.controller.login;
 import com.xht.lease.app.service.LoginService;
 import com.xht.lease.app.vo.user.LoginVo;
 import com.xht.lease.app.vo.user.UserInfoVo;
+import com.xht.lease.common.login.LoginUserHolder;
 import com.xht.lease.common.result.Result;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -21,19 +22,22 @@ public class LoginController {
     @GetMapping("login/getCode")
     @Operation(summary = "获取短信验证码")
     public Result getCode(@RequestParam String phone) {
+        service.getSMSCode(phone);
         return Result.ok();
     }
 
     @PostMapping("login")
     @Operation(summary = "登录")
     public Result<String> login(@RequestBody LoginVo loginVo) {
-        return Result.ok();
+        String token = service.login(loginVo);
+        return Result.ok(token);
     }
 
     @GetMapping("info")
     @Operation(summary = "获取登录用户信息")
     public Result<UserInfoVo> info() {
-        return Result.ok();
+        UserInfoVo info = service.getUserInfoById(LoginUserHolder.getLoginUser().getUserId());
+        return Result.ok(info);
     }
 }
 

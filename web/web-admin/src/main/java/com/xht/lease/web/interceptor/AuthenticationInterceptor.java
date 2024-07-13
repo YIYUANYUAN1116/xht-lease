@@ -1,4 +1,4 @@
-package com.xht.lease.common.interceptor;
+package com.xht.lease.web.interceptor;
 
 import com.xht.lease.common.login.LoginUser;
 import com.xht.lease.common.login.LoginUserHolder;

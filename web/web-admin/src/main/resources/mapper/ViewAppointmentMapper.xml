@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mapper.com.xht.lease.common.ViewAppointmentMapper">
+<mapper namespace="com.xht.lease.web.mapper.ViewAppointmentMapper">
 
     <resultMap id="AppointmentVoMap" type="com.xht.lease.web.vo.appointment.AppointmentVo" autoMapping="true">
         <id property="id" column="id"/>

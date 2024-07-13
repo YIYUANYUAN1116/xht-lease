@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @ComponentScan(basePackages = "com.xht")
-@MapperScan(basePackages = "com.xht.lease.mapper")
+@MapperScan(basePackages = "com.xht.lease.web.mapper")
 @EnableScheduling
 public class XhtLeaseAdminApplication {
 

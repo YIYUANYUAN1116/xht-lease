@@ -6,8 +6,10 @@ import com.xht.lease.web.service.LeaseTermService;
 import com.xht.lease.web.mapper.LeaseTermMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
-* @author liubo
+* @author yzd
 * @description 针对表【lease_term(租期)】的数据库操作Service实现
 * @createDate 2023-07-24 15:48:00
 */
@@ -15,6 +17,10 @@ import org.springframework.stereotype.Service;
 public class LeaseTermServiceImpl extends ServiceImpl<LeaseTermMapper, LeaseTerm>
     implements LeaseTermService {
 
+    @Override
+    public List<LeaseTerm> selectListByRoomId(Long id) {
+        return baseMapper.selectListByRoomId(id);
+    }
 }
 
 

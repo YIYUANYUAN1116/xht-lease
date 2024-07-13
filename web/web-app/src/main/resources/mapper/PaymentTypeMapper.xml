@@ -4,4 +4,26 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xht.lease.app.mapper.PaymentTypeMapper">
 
+    <select id="listByRoomId" resultType="com.xht.lease.model.entity.PaymentType">
+        select
+            t2.name ,
+            t2.additional_info,
+            t2.pay_month_count
+        from room_payment_type t1
+        left join payment_type t2 on t1.payment_type_id = t2.id
+        where t1.room_id = #{id} and t1.is_deleted=0
+
+    </select>
+    <select id="selectListByRoomId" resultType="com.xht.lease.model.entity.PaymentType">
+        select id,
+               name,
+               pay_month_count,
+               additional_info
+        from payment_type
+        where is_deleted = 0
+          and id in (select payment_type_id
+                     from room_payment_type
+                     where is_deleted = 0
+                       and room_id = #{id})
+    </select>
 </mapper>

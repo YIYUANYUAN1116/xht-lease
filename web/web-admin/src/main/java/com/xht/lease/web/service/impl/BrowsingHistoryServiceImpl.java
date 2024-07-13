@@ -7,7 +7,7 @@ import com.xht.lease.web.mapper.BrowsingHistoryMapper;
 import org.springframework.stereotype.Service;
 
 /**
-* @author liubo
+* @author yzd
 * @description 针对表【browsing_history(浏览历史)】的数据库操作Service实现
 * @createDate 2023-07-24 15:48:00
 */

@@ -6,16 +6,16 @@ spring:
     name: xht-lease-web
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/lease?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://192.168.213.134:3306/lease?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
-    password: yzd2021
+    password: yzd2021$$
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   data:
     redis:
-      host: localhost
-      port: 3156
+      host: 192.168.213.134
+      port: 6379
       database: 0
 
 mybatis-plus:
@@ -29,10 +29,10 @@ mybatis-plus:
       logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
 
 minio:
-  endpoint: http://<hostname>:<port>
-  access-key: <access-key>
-  secret-key: <secret-key>
-  bucket-name: <bucket-name>
+  endpoint: http://192.168.213.134:9001
+  access-key: root
+  secret-key: yzd2021$$
+  bucket-name: xht-lease
 
 springdoc:
   default-flat-param-object: true
